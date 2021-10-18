@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    /* background-image:linear-gradient(rgb(90, 201, 205), #0a6cf1); */
+    color: #00b3ff;
+    text-align: center;
+    /* font-family: 'Gemunu Libre', sans-serif; */
+    font-family: 'Bad Script', cursive;
+    word-spacing: 10px;
+    font-size: 15px;
+    overflow: hidden;
+
+}
+
+#time-left{
+    /* font-size: 80px; */
+    margin: 0;
+    padding: 0;
+    color: #00b3ff;
+    transition: 1s;
+ /*   text-shadow: 0 0 10px #00b3ff,
+                    0 0 20px #00b3ff,
+                    0 0 40px #00b3ff,
+                    0 0 80px #00b3ff,
+                    0 0 120px #00b3ff,
+                    0 0 200px #00b3ff,
+                    0 0 300px #00b3ff,
+                    0 0 400px #00b3ff;*/
+}
+
+
+#time-left span{
+    color: #111;
+    font-size: 80px;
+    padding-left: 25px;
+    display: table-cell;
+    animation: animate5 2s linear infinite;
+}
+
+#time-left span:nth-child(1){
+    animation-delay: 0.5s;
+}
+
+#time-left span:nth-child(2){
+    animation-delay: 1s;
+}
+
+#time-left span:nth-child(3){
+    animation-delay: 1.25s;
+}
+
+#time-left span:nth-child(4){
+    animation-delay: 1.5s;
+}
+
+#time-left span:nth-child(5){
+    animation-delay: 1.75s;
+}
+
+#time-left span:nth-child(6){
+    animation-delay: 2s;
+}
+
+#time-left span:nth-child(7){
+    animation-delay: 2.25s;
+}
+
+#time-left span:nth-child(8){
+    animation-delay: 2.5s;
+}
+
+@keyframes animate5 {
+    0%,100%{
+        color: #fff;
+        filter: blur(2px);
+        text-shadow: 0 0 10px #00b3ff,
+                    0 0 20px #00b3ff,
+                    0 0 40px #00b3ff,
+                    0 0 80px #00b3ff,
+                    0 0 120px #00b3ff,
+                    0 0 200px #00b3ff,
+                    0 0 300px #00b3ff,
+                    0 0 400px #00b3ff;
+    }
+
+    5%,95%{
+        color: #111;
+        filter: blur(0px);
+        text-shadow: none;
+    }
+}
+
+p{
+    animation: op 7s ease-in;
+}
+
+
+
+@keyframes op {
+    0%{
+        opacity: 10%;
+    }
+
+    50%{
+        opacity: 60%;
+    }
+
+    100%{
+        opacity: 100%;
+    }
+}
+
+@media (max-width:924px) {
+    body{
+        word-spacing: 10px;
+        margin-top: 30%;
+        font-size: 16px;
+    
+    }
+
+
+    #time-left span{
+        font-size: 60px;
+        padding-left: 20px;
+        display: table-cell;
+    }
+}
+
+@media (max-width:700px) {
+    body{
+        /* word-spacing: 14px; */
+        margin-top: 35%;
+        font-size: 13px;
+    
+    }
+
+    #time-left span{
+        font-size: 40px;
+        padding-left: 15px;
+        display: table-cell;
+    }
+}
+
+@media (max-width:480px) {
+    body{
+        /* word-spacing: 14px; */
+        margin-top: 47%;
+        font-size: 9px;
+    
+    }
+
+    #time-left span{
+        font-size: 30px;
+        padding-left: 13px;
+        display: table-cell;
+    }
+}
+
+@media (max-width:372px) {
+    body{
+        /* word-spacing: 14px; */
+        margin-top: 55%;
+        font-size: 7px;
+    
+    }
+
+    #time-left span{
+        font-size: 20px;
+        padding-left: 10px;
+        display: table-cell;
+    }
+}
+
+@media (max-width:290px) {
+    body{
+        /* word-spacing: 14px; */
+        margin-top: 60%;
+        font-size: 7px;
+    
+    }
+
+    #time-left span{
+        font-size: 15px;
+        padding-left: 10px;
+        display: table-cell;
+    }
+}
