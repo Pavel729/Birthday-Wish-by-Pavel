@@ -19,7 +19,7 @@ function countDown(){
     }
 
     else if (timeSpan <= 0){
-        timeLeft.innerHTML = "<span>Happy</span> <span>Birthday</span> <span>R</span><span>i</span><span>c</span><span>h</span><span>i</span> <span>!!!</span> ";
+        timeLeft.innerHTML = "<span>Happy</span> <span>Birthday</span> <span>Richi</span> <span>!!!</span> ";
         clearInterval(timerId);
         return;
     };

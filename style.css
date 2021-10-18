@@ -4,15 +4,16 @@ body{
     margin: 0;
     padding: 0;
     margin-top: 20%;
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(0, 0, 0);
-    /* background-image:linear-gradient(rgb(90, 201, 205), #0a6cf1); */
+    /* min-height: 100vh; */
+    background-color: #07252d;
     color: #00b3ff;
     text-align: center;
-    /* font-family: 'Gemunu Libre', sans-serif; */
-    font-family: 'Bad Script', cursive;
+    font-family: 'Gemunu Libre', sans-serif;
+    /* font-family: 'Bad Script', cursive; */
     word-spacing: 10px;
     font-size: 15px;
     overflow: hidden;
@@ -23,63 +24,69 @@ body{
     /* font-size: 80px; */
     margin: 0;
     padding: 0;
-    color: #00b3ff;
-    transition: 1s;
- /*   text-shadow: 0 0 10px #00b3ff,
+    color: rgb(255, 255, 255);
+
+    text-shadow: 0 0 10px #00b3ff,
                     0 0 20px #00b3ff,
                     0 0 40px #00b3ff,
                     0 0 80px #00b3ff,
                     0 0 120px #00b3ff,
                     0 0 200px #00b3ff,
                     0 0 300px #00b3ff,
-                    0 0 400px #00b3ff;*/
+                    0 0 400px #00b3ff;
+    transition: 1s;
 }
 
 
 #time-left span{
-    color: #111;
+    color:#0e3742;
+    text-transform: uppercase;
+    /* -webkit-box-reflect: below 1px linear-gradient(transparent,#000400); */
+    outline: none;
     font-size: 80px;
     padding-left: 25px;
     display: table-cell;
-    animation: animate5 2s linear infinite;
+    animation: animate5 5s linear infinite;
 }
 
 #time-left span:nth-child(1){
-    animation-delay: 0.5s;
-}
-
-#time-left span:nth-child(2){
     animation-delay: 1s;
 }
 
-#time-left span:nth-child(3){
+#time-left span:nth-child(2){
     animation-delay: 1.25s;
 }
 
-#time-left span:nth-child(4){
-    animation-delay: 1.5s;
-}
-
-#time-left span:nth-child(5){
+#time-left span:nth-child(3){
     animation-delay: 1.75s;
 }
 
-#time-left span:nth-child(6){
-    animation-delay: 2s;
-}
-
-#time-left span:nth-child(7){
-    animation-delay: 2.25s;
-}
-
-#time-left span:nth-child(8){
-    animation-delay: 2.5s;
+#time-left span:nth-child(4){
+    animation-delay: 1.75s;
 }
 
 @keyframes animate5 {
-    0%,100%{
-        color: #fff;
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+        color: #0e3742;
+        text-shadow: none;
         filter: blur(2px);
+        /* text-shadow: 0 0 10px #00b3ff,
+                    0 0 20px #00b3ff,
+                    0 0 40px #00b3ff,
+                    0 0 80px #00b3ff,
+                    0 0 120px #00b3ff,
+                    0 0 200px #00b3ff,
+                    0 0 300px #00b3ff,
+                    0 0 400px #00b3ff; */
+    }
+
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,90.1%,100%{
+        color: rgb(255, 255, 255);
+        /* text-shadow: 0 0 10px #03bcf4,
+                    0 0 20px #03bcf4
+                    0 0 40px #03bcf4
+                    0 0 80px #03bcf4
+                    0 0 160px #03bcf4; */
         text-shadow: 0 0 10px #00b3ff,
                     0 0 20px #00b3ff,
                     0 0 40px #00b3ff,
@@ -88,12 +95,9 @@ body{
                     0 0 200px #00b3ff,
                     0 0 300px #00b3ff,
                     0 0 400px #00b3ff;
-    }
-
-    5%,95%{
-        color: #111;
         filter: blur(0px);
-        text-shadow: none;
+        /* text-shadow: none; */
+
     }
 }
 
