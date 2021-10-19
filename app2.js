@@ -13,7 +13,7 @@ function countDown(){
     console.log(timeSpan);
 
     if (timeSpan <= -day){
-        timeLeft.innerHTML = "Hope You had a great time !";
+        timeLeft.innerHTML = "Hope You had a wonderful birthday !";
         clearInterval(timerId);
         return;
     }
@@ -29,7 +29,7 @@ function countDown(){
     const mins = Math.floor((timeSpan % hour)/min);
     const secs = Math.floor((timeSpan % min)/sec);
 
-    timeLeft.innerHTML = days + ' days ' + hours + ' hours ' + mins + ' minutes ' + secs + " seconds ";
+    timeLeft.innerHTML = days + ' days ' + hours + ' hours ' + mins + ' minutes ' + secs + " seconds " + "</br> left for the precious day </br> dear Richi";
 };
 
 timerId = setInterval(countDown,sec);
